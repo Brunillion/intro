@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+    <div class="contenedor">
+        <p>Hola Bonita Introduce tu nombre</p>
+        <input id="Nombre"> <br> <br>
+        <button onclick="Funcion()"> Presioname </button>
+        <br><br>
+        <h1 id="Mensaje"> </h1>
+        <h1 id="Mensaje2"> </h1>
+        <h1 id="URL"></h1>
+        <style>
+            body {background-color:deeppink;text-align: center;color:antiquewhite ;}
+        </style>
+
+        <script>
+            function Funcion(){
+                let Nombre = document.querySelector("#Nombre");
+                let Mensaje= document.querySelector("#Mensaje");
+                let Mensaje2= document.querySelector("#Mensaje2");
+                Mensaje.innerHTML = "Hola " + Nombre.value;
+                
+                Mensaje2.innerHTML = "El restaurante es :  Ristorante Intervallo" ;
+               
+            }
+
+        </script>
+    </div>
+
+    
+
+</body>
+</html>
